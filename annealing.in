@@ -1,0 +1,29 @@
+langevin dynamics simulations
+ &cntrl
+        ntx = 1, irest=0,
+        imin = 0, nstlim = 4500000, dt = 0.002,
+        ntt = 3, gamma_ln=0.1, temp0 = 317.0, tempi=317.0,
+        ntc = 2, ntf = 2,
+        ig=-1,
+        igb=8, ntb = 0, saltcon=0.145,
+        ntwx = 1000, ntwe = 0, ntwr = 1000, ntpr = 1000,
+        cut = 999.0, rgbmax = 999.
+        nmropt = 1,
+ /
+ &wt type='TEMP0', istep1=0,istep2=500000,
+   value1=300.0, value2=400.0
+ /
+ &wt type='TEMP0', istep1=500001,istep2=1500000,
+   value1=400.0, value2=400.0
+ /
+ &wt type='TEMP0', istep1=1500001,istep2=2500000,
+   value1=400.0, value2=350.0
+ /
+ &wt type='TEMP0', istep1=2500001,istep2=3500000,
+   value1=350.0, value2=317.0
+ /
+ &wt type='TEMP0', istep1=3500001,istep2=4500000,
+   value1=317.0, value2=317.0
+ /
+ &wt type='END'
+ /

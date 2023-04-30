@@ -1,0 +1,7 @@
+tage 1 - minimisation
+ &cntrl
+  imin=1, maxcyc=1000, ncyc=500,
+  cut=999., rgbmax=999.,igb=8, ntb=0,
+  ntpr=100
+ /
+
