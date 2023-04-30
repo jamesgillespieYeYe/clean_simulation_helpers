@@ -1,1 +1,1 @@
-Select scripts for protein folding process
+Select scripts for protein folding project
